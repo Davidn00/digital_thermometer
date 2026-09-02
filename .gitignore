@@ -1,0 +1,25 @@
+# Build output
+build/
+
+# MPLAB generated files
+dist/
+nbproject/private/
+nbproject/Makefile-*
+nbproject/Package-*
+
+# Temporary files
+*.tmp
+*.log
+
+# IDE files
+.vscode/*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de Microsoft Office
+~$*
+Termómetro Digital.docx
+documentation.docx 
+docs/

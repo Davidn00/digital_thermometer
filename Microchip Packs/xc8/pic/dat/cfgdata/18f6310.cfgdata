@@ -1,0 +1,150 @@
+# Generated 17/01/2025 GMT
+
+# Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+# All rights reserved.
+# 
+# This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+# 
+# Redistribution and use in source and binary forms, with or without modification, are
+# permitted provided that the following conditions are met:
+# 
+#     1. Redistributions of source code must retain the above copyright notice, this list of
+#        conditions and the following disclaimer.
+# 
+#     2. Redistributions in binary form must reproduce the above copyright notice, this list
+#        of conditions and the following disclaimer in the documentation and/or other
+#        materials provided with the distribution. Publication is not required when
+#        this file is used in an embedded application.
+# 
+#     3. Microchip's name may not be used to endorse or promote products derived from this
+#        software without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Microchip PIC18F6310 Configuration Word Definitions
+
+# File Syntax:
+# Each configuration register is given as:
+# 
+#     CWORD:<address>:<mask>:<default value>[:<name>[,<alias list>]]
+# 
+# for each CWORD the configuration settings are listed as
+# 
+#     CSETTING:<mask>:<name>[,<alias list>]:<description>
+# 
+# lastly for each CSETTING all possible values are listed as
+# 
+#     CVALUE:<value>:<name>[,<alias list>]:<description>
+# 
+# All numerical values are given in unqualified hex.  In terms of
+# #pragma config, note the following correspondence:
+# 
+#    #pragma config CSETTING<name> = CVALUE<name>
+# 
+# The compiler may also emit a message when it detects certain programming.
+# This behaviour is defined by the following record
+# 
+#     CMSG:<CSETTING name>=<CVALUE name>[,...]:<message number>
+# 
+# If the compiler encounters the given programming then it will emit the
+# with the corresponding numnber.  Note that these records must appear last
+# in the file.
+# 
+# Comments are also permitted.  Any line beginning with a '#'
+# character will be treated as a comment.
+
+CWORD:300001:CF:7:CONFIG1H
+CSETTING:F:OSC:Oscillator
+CVALUE:9:INTIO7:Internal oscillator block, CLKO function on RA6, port function on RA7
+CVALUE:8:INTIO67:Internal oscillator block, port function on RA6 and RA7
+CVALUE:7:RCIO:External RC oscillator, port function on RA6
+CVALUE:6:HSPLL:HS oscillator, PLL enabled (clock frequency = 4 x FOSC1)
+CVALUE:5:ECIO:EC oscillator, port function on RA6
+CVALUE:4:EC:EC oscillator, CLKO function on RA6
+CVALUE:3:RC:External RC oscillator, CLKO function on RA6
+CVALUE:2:HS:HS oscillator
+CVALUE:1:XT:XT oscillator
+CVALUE:0:LP:LP oscillator
+CSETTING:40:FCMEN:Fail-Safe Clock Monitor Enable
+CVALUE:0:OFF:Fail-Safe Clock Monitor disabled
+CVALUE:40:ON:Fail-Safe Clock Monitor enabled
+CSETTING:80:IESO:Internal External Switch Over Mode
+CVALUE:0:OFF:Oscillator Switchover mode disabled
+CVALUE:80:ON:Oscillator Switchover mode enabled
+CWORD:300002:1F:1F:CONFIG2L
+CSETTING:1:PWRT:Power Up Timer
+CVALUE:1:OFF:PWRT disabled
+CVALUE:0:ON:PWRT enabled
+CSETTING:6:BOREN:Brown Out Detect
+CVALUE:6:SBORDIS:Brown-out Reset enabled in hardware only (SBOREN is disabled)
+CVALUE:4:NOSLP:Brown-out Reset enabled in hardware only and disabled in Sleep mode (SBOREN is disabled)
+CVALUE:2:ON:Brown-out Reset enabled and controlled by software (SBOREN is enabled)
+CVALUE:0:OFF:Brown-out Reset disabled in hardware and software
+CSETTING:18:BORV:Brown Out Voltage
+CVALUE:18:3:VBOR set to 2.1V
+CVALUE:10:2:VBOR set to 2.8V
+CVALUE:8:1:VBOR set to 4.3V
+CVALUE:0:0:VBOR set to 4.6V
+CWORD:300003:1F:1F:CONFIG2H
+CSETTING:1:WDT:Watchdog Timer
+CVALUE:1:ON:WDT enabled
+CVALUE:0:OFF:WDT disabled (control is placed on the SWDTEN bit)
+CSETTING:1E:WDTPS:Watchdog Postscaler
+CVALUE:1E:32768:1:32768
+CVALUE:1C:16384:1:16384
+CVALUE:1A:8192:1:8192
+CVALUE:18:4096:1:4096
+CVALUE:16:2048:1:2048
+CVALUE:14:1024:1:1024
+CVALUE:12:512:1:512
+CVALUE:10:256:1:256
+CVALUE:E:128:1:128
+CVALUE:C:64:1:64
+CVALUE:A:32:1:32
+CVALUE:8:16:1:16
+CVALUE:6:8:1:8
+CVALUE:4:4:1:4
+CVALUE:2:2:1:2
+CVALUE:0:1:1:1
+CWORD:300004:C3:C3:CONFIG3L
+CWORD:300005:85:81:CONFIG3H
+CSETTING:1:CCP2MX:CCP2 Mux
+CVALUE:1:PORTC:CCP2 input/output is multiplexed with RC1
+CVALUE:0:PORTE:CCP2 input/output is multiplexed with RE7
+CSETTING:4:LPT1OSC:Low Power Timer1 Osc enable
+CVALUE:4:ON:Timer1 configured for low-power operation
+CVALUE:0:OFF:Timer1 configured for higher power operation
+CSETTING:80:MCLRE:Master Clear Enable
+CVALUE:80:ON:MCLR pin enabled; RG5 input pin disabled
+CVALUE:0:OFF:RG5 input pin enabled; MCLR disabled
+CWORD:300006:C1:81:CONFIG4L
+CSETTING:1:STVREN:Stack Overflow Reset
+CVALUE:1:ON:Stack full/underflow will cause Reset
+CVALUE:0:OFF:Stack full/underflow will not cause Reset
+CSETTING:40:XINST:Extended Instruction Set Enable bit
+CVALUE:40:ON:Instruction set extension and Indexed Addressing mode enabled
+CVALUE:0:OFF:Instruction set extension and Indexed Addressing mode disabled (Legacy mode)
+CSETTING:80:DEBUG:Background Debugger Enable bit
+CVALUE:80:OFF:Background debugger disabled, RB6 and RB7 configured as general purpose I/O pins
+CVALUE:0:ON:Background debugger enabled, RB6 and RB7 are dedicated to In-Circuit Debug
+CWORD:300008:1:1:CONFIG5L
+CSETTING:1:CP:Code Protect 00000-01FFF
+CVALUE:1:OFF:Program memory block not code-protected
+CVALUE:0:ON:Program memory block code-protected
+CWORD:30000C:1:1:CONFIG7L
+CWORD:200000:FF:FF:IDLOC0
+CWORD:200001:FF:FF:IDLOC1
+CWORD:200002:FF:FF:IDLOC2
+CWORD:200003:FF:FF:IDLOC3
+CWORD:200004:FF:FF:IDLOC4
+CWORD:200005:FF:FF:IDLOC5
+CWORD:200006:FF:FF:IDLOC6
+CWORD:200007:FF:FF:IDLOC7
+CMSG:XINST=ON:1504

@@ -1,0 +1,236 @@
+# Generated 17/01/2025 GMT
+
+# Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+# All rights reserved.
+# 
+# This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+# 
+# Redistribution and use in source and binary forms, with or without modification, are
+# permitted provided that the following conditions are met:
+# 
+#     1. Redistributions of source code must retain the above copyright notice, this list of
+#        conditions and the following disclaimer.
+# 
+#     2. Redistributions in binary form must reproduce the above copyright notice, this list
+#        of conditions and the following disclaimer in the documentation and/or other
+#        materials provided with the distribution. Publication is not required when
+#        this file is used in an embedded application.
+# 
+#     3. Microchip's name may not be used to endorse or promote products derived from this
+#        software without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Microchip PIC18F8720 Configuration Word Definitions
+
+# File Syntax:
+# Each configuration register is given as:
+# 
+#     CWORD:<address>:<mask>:<default value>[:<name>[,<alias list>]]
+# 
+# for each CWORD the configuration settings are listed as
+# 
+#     CSETTING:<mask>:<name>[,<alias list>]:<description>
+# 
+# lastly for each CSETTING all possible values are listed as
+# 
+#     CVALUE:<value>:<name>[,<alias list>]:<description>
+# 
+# All numerical values are given in unqualified hex.  In terms of
+# #pragma config, note the following correspondence:
+# 
+#    #pragma config CSETTING<name> = CVALUE<name>
+# 
+# The compiler may also emit a message when it detects certain programming.
+# This behaviour is defined by the following record
+# 
+#     CMSG:<CSETTING name>=<CVALUE name>[,...]:<message number>
+# 
+# If the compiler encounters the given programming then it will emit the
+# with the corresponding numnber.  Note that these records must appear last
+# in the file.
+# 
+# Comments are also permitted.  Any line beginning with a '#'
+# character will be treated as a comment.
+
+CWORD:300001:27:27:CONFIG1H
+CSETTING:7:OSC:Oscillator Selection bits
+CVALUE:7:RCIO,_RCIO_OSC,_RCIO_OSC_1H:RC oscillator w/ OSC2 configured as RA6
+CVALUE:6:HSPLL,_HSPLL_OSC,_HSPLL_OSC_1H:HS oscillator with PLL enabled; clock frequency = (4 x FOSC)
+CVALUE:5:ECIO,_ECIO_OSC,_ECIO_OSC_1H:EC oscillator w/ OSC2 configured as RA6
+CVALUE:4:EC,_EC_OSC,_EC_OSC_1H:EC oscillator w/ OSC2 configured as divide-by-4 clock output
+CVALUE:3:RC,_RC_OSC,_RC_OSC_1H:RC oscillator w/ OSC2 configured as divide-by-4 clock output
+CVALUE:2:HS,_HS_OSC,_HS_OSC_1H:HS oscillator
+CVALUE:1:XT,_XT_OSC,_XT_OSC_1H:XT oscillator
+CVALUE:0:LP,_LP_OSC,_LP_OSC_1H:LP oscillator
+CSETTING:20:OSCS:Oscillator System Clock Switch Enable bit
+CVALUE:20:OFF:Oscillator system clock switch option is disabled (main oscillator is source)
+CVALUE:0:ON:Timer1 Oscillator system clock switch option is enabled (oscillator switching is enabled)
+CWORD:300002:F:F:CONFIG2L
+CSETTING:1:PWRT:Power-up Timer Enable bit
+CVALUE:1:OFF:PWRT disabled
+CVALUE:0:ON:PWRT enabled
+CSETTING:2:BOR:Brown-out Reset Enable bit
+CVALUE:2:ON:Brown-out Reset enabled
+CVALUE:0:OFF:Brown-out Reset disabled
+CSETTING:C:BORV:Brown-out Reset Voltage bits
+CVALUE:C:25,_BORV_20,_BORV_20_2L:VBOR set to 2.5V
+CVALUE:8:27:VBOR set to 2.7V
+CVALUE:4:42:VBOR set to 4.2V
+CVALUE:0:45:VBOR set to 4.5V
+CWORD:300003:F:F:CONFIG2H
+CSETTING:1:WDT:Watchdog Timer Enable bit
+CVALUE:1:ON:WDT enabled
+CVALUE:0:OFF:WDT disabled (control is placed on the SWDTEN bit)
+CSETTING:E:WDTPS:Watchdog Timer Postscale Select bits
+CVALUE:E:128:1:128
+CVALUE:C:64:1:64
+CVALUE:A:32:1:32
+CVALUE:8:16:1:16
+CVALUE:6:8:1:8
+CVALUE:4:4:1:4
+CVALUE:2:2:1:2
+CVALUE:0:1:1:1
+CWORD:300004:83:83:CONFIG3L
+CSETTING:3:MODE:Processor Mode Select bits
+CVALUE:3:MC,_MC_MODE,_MC_MODE_3L:Microcontroller mode
+CVALUE:2:MP,_MP_MODE,_MP_MODE_3L:Microprocessor mode
+CVALUE:1:MPB,_MPB_MODE,_MPB_MODE_3L:Microprocessor with Boot Block mode
+CVALUE:0:EM,_XMC_MODE,_XMC_MODE_3L:Extended Microcontroller mode
+CSETTING:80:WAIT:External Bus Data Wait Enable bit
+CVALUE:80:OFF:Wait selections unavailable for table reads and table writes
+CVALUE:0:ON:Wait selections for table reads and table writes are determined by the WAIT1:WAIT0 bits (MEMCOM<5:4>)
+CWORD:300005:1:3:CONFIG3H
+CSETTING:1:CCP2MUX:CCP2 Mux bit
+CVALUE:1:ON,_CCP2MX_ON,_CCP2MX_ON_3H:CCP2 input/output is multiplexed with RC1
+CVALUE:0:OFF,_CCP2MX_OFF,_CCP2MX_OFF_3H:CCP2 is multiplexed with RB3 in Extended Microcontroller, Microprocessor or Microprocessor with Boot Block mode. Or with RE7 in Microcontroller mode.
+CWORD:300006:85:85:CONFIG4L
+CSETTING:1:STVR:Stack Full/Underflow Reset Enable bit
+CVALUE:1:ON:Stack full/underflow will cause Reset
+CVALUE:0:OFF:Stack full/underflow will not cause Reset
+CSETTING:4:LVP:Low-Voltage ICSP Enable bit
+CVALUE:4:ON:Low-voltage ICSP enabled
+CVALUE:0:OFF:Low-voltage ICSP disabled
+CSETTING:80:DEBUG:Background Debugger Enable bit
+CVALUE:80:OFF:Background debugger disabled. RB6 and RB7 configured as general purpose I/O pins.
+CVALUE:0:ON:Background debugger enabled. RB6 and RB7 are dedicated to In-Circuit Debug.
+CWORD:300008:FF:FF:CONFIG5L
+CSETTING:1:CP0:Code Protection bit
+CVALUE:1:OFF:Block 0 (000200-003FFFh) not code-protected
+CVALUE:0:ON:Block 0 (000200-003FFFh) code-protected
+CSETTING:2:CP1:Code Protection bit
+CVALUE:2:OFF:Block 1 (004000-007FFFh) not code-protected
+CVALUE:0:ON:Block 1 (004000-007FFFh) code-protected
+CSETTING:4:CP2:Code Protection bit
+CVALUE:4:OFF:Block 2 (008000-00BFFFh) not code-protected
+CVALUE:0:ON:Block 2 (008000-00BFFFh) code-protected
+CSETTING:8:CP3:Code Protection bit
+CVALUE:8:OFF:Block 3 (00C000-00FFFFh) not code-protected
+CVALUE:0:ON:Block 3 (00C000-00FFFFh) code-protected
+CSETTING:10:CP4:Code Protection bit
+CVALUE:10:OFF:Block 4 (010000-013FFFh) not code-protected
+CVALUE:0:ON:Block 4 (010000-013FFFh) code-protected
+CSETTING:20:CP5:Code Protection bit
+CVALUE:20:OFF:Block 5 (014000-017FFFh) not code-protected
+CVALUE:0:ON:Block 5 (014000-017FFFh) code-protected
+CSETTING:40:CP6:Code Protection bit
+CVALUE:40:OFF:Block 6 (018000-01BFFFh) not code-protected
+CVALUE:0:ON:Block 6 (018000-01BFFFh) code-protected
+CSETTING:80:CP7:Code Protection bit
+CVALUE:80:OFF:Block 7 (01C000-01FFFFh) not code-protected
+CVALUE:0:ON:Block 7 (01C000-01FFFFh) code-protected
+CWORD:300009:C0:C0:CONFIG5H
+CSETTING:40:CPB:Boot Block Code Protection bit
+CVALUE:40:OFF:Boot Block (000000-0001FFh) not code-protected
+CVALUE:0:ON:Boot Block (000000-0001FFh) code-protected
+CSETTING:80:CPD:Data EEPROM Code Protection bit
+CVALUE:80:OFF:Data EEPROM not code-protected
+CVALUE:0:ON:Data EEPROM code-protected
+CWORD:30000A:FF:FF:CONFIG6L
+CSETTING:1:WRT0:Write Protection bit
+CVALUE:1:OFF:Block 0 (000200-003FFFh) not write-protected
+CVALUE:0:ON:Block 0 (000200-003FFFh) write-protected
+CSETTING:2:WRT1:Write Protection bit
+CVALUE:2:OFF:Block 1 (004000-007FFFh) not write-protected
+CVALUE:0:ON:Block 1 (004000-007FFFh) write-protected
+CSETTING:4:WRT2:Write Protection bit
+CVALUE:4:OFF:Block 2 (008000-00BFFFh) not write-protected
+CVALUE:0:ON:Block 2 (008000-00BFFFh) write-protected
+CSETTING:8:WRT3:Write Protection bit
+CVALUE:8:OFF:Block 3 (00C000-00FFFFh) not write-protected
+CVALUE:0:ON:Block 3 (00C000-00FFFFh) write-protected
+CSETTING:10:WRT4:Write Protection bit
+CVALUE:10:OFF:Block 4 (010000-013FFFh) not write-protected
+CVALUE:0:ON:Block 4 (010000-013FFFh) write-protected
+CSETTING:20:WRT5:Write Protection bit
+CVALUE:20:OFF:Block 5 (014000-017FFFh) not write-protected
+CVALUE:0:ON:Block 5 (014000-017FFFh) write-protected
+CSETTING:40:WRT6:Write Protection bit
+CVALUE:40:OFF:Block 6 (018000-01BFFFh) not write-protected
+CVALUE:0:ON:Block 6 (018000-01BFFFh) write-protected
+CSETTING:80:WRT7:Write Protection bit
+CVALUE:80:OFF:Block 7 (01C000-01FFFFh) not write-protected
+CVALUE:0:ON:Block 7 (01C000-01FFFFh) write-protected
+CWORD:30000B:E0:E0:CONFIG6H
+CSETTING:20:WRTC:Configuration Register Write Protection bit
+CVALUE:20:OFF:Configuration registers (300000-3000FFh) not write-protected
+CVALUE:0:ON:Configuration registers (300000-3000FFh) write-protected
+CSETTING:40:WRTB:Boot Block Write Protection bit
+CVALUE:40:OFF:Boot Block (000000-0001FFh) not write-protected
+CVALUE:0:ON:Boot Block (000000-0001FFh) write-protected
+CSETTING:80:WRTD:Data EEPROM Write Protection bit
+CVALUE:80:OFF:Data EEPROM not write-protected
+CVALUE:0:ON:Data EEPROM write-protected
+CWORD:30000C:FF:FF:CONFIG7L
+CSETTING:1:EBTR0:Table Read Protection bit
+CVALUE:1:OFF:Block 0 (000200-003FFFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Block 0 (000200-003FFFh) protected from table reads executed in other blocks
+CSETTING:2:EBTR1:Table Read Protection bit
+CVALUE:2:OFF:Block 1 (004000-007FFFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Block 1 (004000-007FFFh) protected from table reads executed in other blocks
+CSETTING:4:EBTR2:Table Read Protection bit
+CVALUE:4:OFF:Block 2 (008000-00BFFFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Block 2 (008000-00BFFFh) protected from table reads executed in other blocks
+CSETTING:8:EBTR3:Table Read Protection bit
+CVALUE:8:OFF:Block 3 (00C000-00FFFFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Block 3 (00C000-00FFFFh) protected from table reads executed in other blocks
+CSETTING:10:EBTR4:Table Read Protection bit
+CVALUE:10:OFF:Block 4 (010000-013FFFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Block 4 (010000-013FFFh) protected from table reads executed in other blocks
+CSETTING:20:EBTR5:Table Read Protection bit
+CVALUE:20:OFF:Block 5 (014000-017FFFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Block 5 (014000-017FFFh) protected from table reads executed in other blocks
+CSETTING:40:EBTR6:Table Read Protection bit
+CVALUE:40:OFF:Block 6 (018000-01BFFFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Block 6 (018000-01BFFFh) protected from table reads executed in other blocks
+CSETTING:80:EBTR7:Table Read Protection bit
+CVALUE:80:OFF:Block 7 (01C000-01FFFFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Block 7 (01C000-01FFFFh) protected from table reads executed in other blocks
+CWORD:30000D:40:40:CONFIG7H
+CSETTING:40:EBTRB:Boot Block Table Read Protection bit
+CVALUE:40:OFF:Boot Block (000000-0001FFh) not protected from table reads executed in other blocks
+CVALUE:0:ON:Boot Block (000000-0001FFh) protected from table reads executed in other blocks
+CWORD:200000:FF:FF:IDLOC0
+CWORD:200001:FF:FF:IDLOC1
+CWORD:200002:FF:FF:IDLOC2
+CWORD:200003:FF:FF:IDLOC3
+CWORD:200004:FF:FF:IDLOC4
+CWORD:200005:FF:FF:IDLOC5
+CWORD:200006:FF:FF:IDLOC6
+CWORD:200007:FF:FF:IDLOC7
+CMSG:EBTR0=ON:1605
+CMSG:EBTR1=ON:1605
+CMSG:EBTR2=ON:1605
+CMSG:EBTR3=ON:1605
+CMSG:EBTR4=ON:1605
+CMSG:EBTR5=ON:1605
+CMSG:EBTR6=ON:1605
+CMSG:EBTR7=ON:1605
+CMSG:EBTRB=ON:1605

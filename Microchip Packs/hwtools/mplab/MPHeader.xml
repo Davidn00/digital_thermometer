@@ -1,0 +1,11 @@
+<MPLAB_Header_Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/MPHeader.xsd">
+  <Information file="MPHEADER.XML" version="2.00.01"/>
+  <ICD>
+    <Header devid="0x1FE0" devseladdr="0x0FA0" hdruse="optional" name="AC162078">
+      <Device devselval="0x85" hdrstate="green" name="PIC18F1230"/>
+      <Device devselval="0x85" hdrstate="green" name="PIC18LF1230"/>
+      <Device devselval="0x84" hdrstate="green" name="PIC18F1330"/>
+      <Device devselval="0x84" hdrstate="green" name="PIC18LF1330"/>
+    </Header>
+  </ICD>
+</MPLAB_Header_Database>

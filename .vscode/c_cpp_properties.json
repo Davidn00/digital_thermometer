@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "PIC18F4550-XC8",
+
+            "compilerPath": "C:/Program Files/Microchip/xc8/v4.00/bin/xc8-cc.exe",
+
+            "compilerArgs": [
+                "-mcpu=18F4550",
+                "-mdfp=D:/Work/Proyectos/C/Digital Thermometer/Microchip Packs/xc8"
+            ],
+
+            "cStandard": "c99",
+
+            "intelliSenseMode": "windows-gcc-x64",
+
+            "includePath": [
+                "${workspaceFolder}/src",
+                "C:/Program Files/Microchip/xc8/v4.00/pic/include",
+                "D:/Work/Proyectos/C/Digital Thermometer/Microchip Packs/xc8/pic/include",
+                "D:/Work/Proyectos/C/Digital Thermometer/Microchip Packs/xc8/pic/include/proc"
+            ],
+
+            "forcedInclude": [
+                "D:/Work/Proyectos/C/Digital Thermometer/Microchip Packs/xc8/pic/include/proc/pic18f4550.h"
+            ],
+
+            "defines": [
+                "__18F4550"
+            ]
+        }
+    ],
+
+    "version": 4
+}

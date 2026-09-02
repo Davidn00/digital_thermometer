@@ -1,0 +1,269 @@
+<sdm:sdm xmlns:sdm="http://crownking/sdm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://crownking/sdm ../../schema/sdm/sdm.xsd">
+  <sdm:version sdm:filename="sdmRealICE4.xml" sdm:major="0" sdm:minor="0" sdm:rev="0"/>
+  <sdm:devicecapabilities>
+    <sdm:device sdm:devicename="PIC18F1220" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F1230" sdm:profile="icdv2"/>
+    <sdm:device sdm:devicename="PIC18F1320" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F1330" sdm:profile="icdv2"/>
+    <sdm:device sdm:devicename="PIC18F2220" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2221" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2320" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2321" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2331" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2410" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F242" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2420" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2423" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2431" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2439" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2450" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2455" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2458" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F248" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2480" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2510" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2515" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F252" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2520" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2523" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2525" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2539" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2550" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2553" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F258" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F2580" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2585" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2610" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2620" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2680" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2682" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F2685" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4220" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4221" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4320" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4321" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4331" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4410" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F442" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4420" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4423" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4431" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4439" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4450" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4455" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4458" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F448" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4480" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4510" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4515" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F452" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4520" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4523" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4525" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4539" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4550" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4553" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F458" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F4580" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4585" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4610" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4620" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4680" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4682" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F4685" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6310" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6390" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6393" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6410" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6490" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6493" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6520" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F6525" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F6527" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6585" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F6620" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F6621" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F6622" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6627" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6628" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6680" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F6720" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F6722" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F6723" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8310" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8390" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8393" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8410" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8490" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8493" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8520" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F8525" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F8527" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8585" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F8620" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F8621" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F8622" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8627" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8628" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8680" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F8720" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18F8722" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18F8723" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF1220" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF1230" sdm:profile="icdv2"/>
+    <sdm:device sdm:devicename="PIC18LF1320" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF1330" sdm:profile="icdv2"/>
+    <sdm:device sdm:devicename="PIC18LF2220" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2221" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2320" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2321" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2331" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2410" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF242" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2420" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2423" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2431" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2439" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2450" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2455" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2458" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF248" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2480" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2510" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2515" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF252" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2520" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2523" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2525" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2539" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2550" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2553" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF258" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF2580" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2585" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2610" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2620" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2680" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2682" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF2685" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4220" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4221" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4320" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4321" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4331" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4410" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF442" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4420" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4423" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4431" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4439" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4450" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4455" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4458" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF448" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4480" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4510" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4515" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF452" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4520" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4523" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4525" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4539" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4550" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4553" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF458" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF4580" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4585" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4610" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4620" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4680" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4682" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF4685" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6310" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6390" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6393" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6410" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6490" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6493" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6520" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF6525" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF6527" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6585" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF6620" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF6621" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF6622" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6627" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6628" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6680" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF6720" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF6722" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF6723" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8310" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8390" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8393" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8410" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8490" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8493" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8520" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF8525" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF8527" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8585" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF8620" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF8621" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF8622" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8627" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8628" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8680" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF8720" sdm:profile="18f"/>
+    <sdm:device sdm:devicename="PIC18LF8722" sdm:profile="icdv1"/>
+    <sdm:device sdm:devicename="PIC18LF8723" sdm:profile="icdv1"/>
+  </sdm:devicecapabilities>
+  <sdm:profiledef sdm:profilename="18f" sdm:profilesupported="yes">
+    <sdm:debuggermodule/>
+    <sdm:datastreams>
+      <sdm:stream sdm:compilersupport="required" sdm:type="instrumentedtrace">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="it_pic_port" sdm:resource="port"/>
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="it_pic_dc_spi" sdm:resource="spi"/>
+      </sdm:stream>
+      <sdm:stream sdm:type="generic">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="raw" sdm:request="powermonitor" sdm:resource="debuggermodule-datacapture"/>
+      </sdm:stream>
+    </sdm:datastreams>
+  </sdm:profiledef>
+  <sdm:profiledef sdm:profilename="icdv2" sdm:profilesupported="yes">
+    <sdm:debuggermodule>
+      <sdm:datacaptureformat sdm:datasize="1" sdm:idsize="1" sdm:iduse="always"/>
+    </sdm:debuggermodule>
+    <sdm:datastreams>
+      <sdm:stream sdm:type="runtimewatch">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="icdv2" sdm:resource="debuggermodule-datacapture"/>
+      </sdm:stream>
+      <sdm:stream sdm:type="datacapture">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="icdv2" sdm:resource="debuggermodule-datacapture"/>
+      </sdm:stream>
+      <sdm:stream sdm:compilersupport="required" sdm:type="instrumentedtrace">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="it_pic_dc_spi" sdm:default="true" sdm:resource="debuggermodule-datacapture" sdm:symbolname="__DCByte"/>
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="it_pic_port" sdm:resource="port"/>
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="it_pic_dc_spi" sdm:resource="spi"/>
+      </sdm:stream>
+      <sdm:stream sdm:compilersupport="required" sdm:type="functionprofile">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="cp_flp_pic18t_3byte" sdm:default="true" sdm:interleave="no" sdm:max="1" sdm:resource="debuggermodule-datacapture" sdm:symbolname="__DCByte"/>
+      </sdm:stream>
+      <sdm:stream sdm:type="generic">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="raw" sdm:request="powermonitor" sdm:resource="debuggermodule-datacapture"/>
+      </sdm:stream>
+    </sdm:datastreams>
+  </sdm:profiledef>
+  <sdm:profiledef sdm:profilename="icdv1" sdm:profilesupported="yes">
+    <sdm:debuggermodule/>
+    <sdm:datastreams>
+      <sdm:stream sdm:compilersupport="required" sdm:type="instrumentedtrace">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="it_pic_port" sdm:resource="port"/>
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="it_pic_dc_spi" sdm:resource="spi"/>
+      </sdm:stream>
+      <sdm:stream sdm:type="generic">
+        <sdm:canuse sdm:connection="3" sdm:decodescheme="raw" sdm:request="powermonitor" sdm:resource="debuggermodule-datacapture"/>
+      </sdm:stream>
+    </sdm:datastreams>
+  </sdm:profiledef>
+</sdm:sdm>

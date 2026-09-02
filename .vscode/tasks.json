@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "XC8: Build Digital Thermometer",
+            "type": "process",
+            "command": "xc8-cc",
+            "args": [
+                "-mcpu=18F4550",
+                "-mdfp=D:\\Work\\Proyectos\\C\\Digital Thermometer\\Microchip Packs\\xc8",
+                "-O0",
+                "-o",
+                "build\\main.elf",
+                "src\\main.c",
+                "src\\adc0801.c"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
