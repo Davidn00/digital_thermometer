@@ -12,7 +12,8 @@
                 "-o",
                 "build\\main.elf",
                 "src\\main.c",
-                "src\\adc0801.c"
+                "src\\adc0801.c",
+                "src\\lm35.c"
             ],
             "group": {
                 "kind": "build",
