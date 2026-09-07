@@ -13,7 +13,8 @@
                 "build\\main.elf",
                 "src\\main.c",
                 "src\\adc0801.c",
-                "src\\lm35.c"
+                "src\\lm35.c",
+                "src\\filter.c"
             ],
             "group": {
                 "kind": "build",
