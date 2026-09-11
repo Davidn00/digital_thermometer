@@ -5,7 +5,7 @@
   <WINDOW type="default" module="ISIS">
    <editor metric="0" gridmajor="2540000" mode="00000010" zoom="0" scale="126" flipped="0" gridminor="254000" gridmode="0" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
     <world y1="-19050000" x1="-26670000" y2="19050000" x2="26670000"/>
-    <centre x="-11430000" y="-2794000"/>
+    <centre x="-2052159" y="75259"/>
     <origin x="0" y="0"/>
    </editor>
   </WINDOW>
@@ -20,17 +20,18 @@
  <MODULE name="ISIS">
   <editor metric="0" gridmajor="2540000" mode="00000010" zoom="0" scale="126" flipped="0" gridminor="254000" gridmode="0" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
    <world y1="-19050000" x1="-26670000" y2="19050000" x2="26670000"/>
-   <centre x="-11430000" y="-2794000"/>
+   <centre x="-2052159" y="75259"/>
    <origin x="0" y="0"/>
   </editor>
  </MODULE>
  <MODULE name="VSMDEBUG">
   <PWI>
-   <POPUP w="800" x="48" flags="00000002" y="160" h="200" pid="0" iid="-1">
+   <POPUP w="1081" x="48" flags="00000002" y="160" h="496" pid="0" iid="-1">
     <PROPERTIES>
-     <ITEM name="Message Column Width">-22</ITEM>
+     <ITEM name="Message Column Width">-142</ITEM>
      <ITEM name="ShowGrid">No</ITEM>
      <ITEM name="Source Column Width">100</ITEM>
+     <ITEM name="Time Column Width">120</ITEM>
      <ITEM name="Version">100</ITEM>
     </PROPERTIES>
    </POPUP>
@@ -150,6 +151,9 @@
     </PROPERTIES>
    </POPUP>
    <POPUP w="1384" x="273" flags="00000000" y="166" h="883" pid="0" iid="43">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP w="1384" x="212" flags="00000000" y="70" h="883" pid="0" iid="40">
     <PROPERTIES/>
    </POPUP>
   </PWI>

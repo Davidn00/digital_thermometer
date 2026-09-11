@@ -4,17 +4,30 @@
         {
             "label": "XC8: Build Digital Thermometer",
             "type": "process",
-            "command": "xc8-cc",
+            "command": "C:\\Program Files\\Microchip\\xc8\\v4.00\\bin\\xc8-cc.EXE",
             "args": [
                 "-mcpu=18F4550",
                 "-mdfp=D:\\Work\\Proyectos\\C\\Digital Thermometer\\Microchip Packs\\xc8",
                 "-O0",
                 "-o",
                 "build\\main.elf",
+
                 "src\\main.c",
                 "src\\adc0801.c",
                 "src\\lm35.c",
-                "src\\filter.c"
+                "src\\filter.c",
+                "src\\timer.c",
+                "src\\adc_internal.c",
+                "src\\i2c.c",
+                "src\\pcf8574.c",
+                "src\\lcd.c",
+                "src\\eeprom.c",
+                "src\\mcp4725.c",
+                "src\\buttons.c",
+                "src\\alarm.c",
+                "src\\stats.c",
+                "src\\history.c",
+                "src\\seg7.c"
             ],
             "group": {
                 "kind": "build",

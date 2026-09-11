@@ -6,6 +6,5 @@
 void ADC0801_Init(void);
 void ADC0801_StartConversion(void);
 uint8_t ADC0801_Read(void);
-uint8_t ADC0801_IsReady(void);
 
 #endif
